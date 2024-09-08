@@ -1,0 +1,86 @@
+@import '../../styles/layout/global-rules';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  padding: 1.3rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 300;
+    color: $white; /* White text */
+    font-size: 20px;
+
+    img {
+      max-height: 40px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.navbar-button .navbar-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $black;
+  background-color: $main-color;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  img {
+    max-height: 30px;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #e0c03d; /* Darken the button on hover */
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack logo and button on top of each other */
+    align-items: center;
+  }
+
+  .navbar-brand {
+    margin-left: 0; /* Center the logo */
+  }
+
+  .navbar-button {
+    margin-right: 0;
+    margin-top: 1rem; /* Add space between logo and button */
+    width: 100%; /* Make button full width on mobile */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 14px;
+
+    img {
+      max-height: 30px;
+    }
+  }
+
+  .navbar-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

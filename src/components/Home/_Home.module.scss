@@ -1,0 +1,56 @@
+@import '../../styles//layout/global-rules';
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-box {
+  background-color: $white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .welcome-box {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-box {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

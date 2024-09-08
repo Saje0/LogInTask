@@ -1,0 +1,7 @@
+// Import Global Rules
+@use '../styles/layout/global-rules';
+
+// Import Pages
+@use '../components/LogInForm/LoginForm.module.scss';
+@use '../components/Navbar/Navbar.module.scss';
+@use '../components/Home/Home.module.scss';
